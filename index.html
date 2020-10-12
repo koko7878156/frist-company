@@ -1,27 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>日環股份有限公司</title>
+
+
+    <!--  Slick CDN  -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
     <!-- 導覽列 -->
-    <nav>
+    <nav id="navigation">
         <a href="" class="logo"><img src="./img/日環LOGO.png" alt=""></a>
         <img src="" alt="">
+
+        <!-- 動畫圖示 -->
+        <div class="Animation">
+            <img src="./img/醫院(圖示).png" alt="">
+            <img src="./img/貨車(圖示).png" alt="">
+            <img src="./img/工廠(圖示).png" alt="">
+        </div>
+
+        <!-- 圖示連結 -->
         <div class="social">
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="./img/總攬.png" alt=""></a>
+            <a href=""><img src="./img/連結(圖示).png" alt=""></a>
+            <a href=""><img src="./img/首頁.png" alt=""></a>
             <a href=""><img src="" alt=""></a>
         </div>
-        <div class="link">
 
+        <!-- 連結欄位 -->
+        <div id="link">
+            <ul>
+                <li>最新消息</li>
+                <li>本廠介紹</li>
+                <li>營運資訊</li>
+                <li>文件下載</li>
+                <li>地方資訊</li>
+                <li>相關連結</li>
+            </ul>
         </div>
 
     </nav>
+
+    <!-- 橫幅 -->
+    <section id="banner">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅1&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅2&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅3&font=noto">
+    </section>
+
+    <!-- 橫幅內文字動畫 -->
+    <div>
+        <h2>環境</h2>
+        <p>愛護地球</p>
+    </div>
+
+    <!-- 最新消息 -->
+    <section id="news">
+        <h2></h2>
+        <p></p>
+    </section>
+
+    <article id="news-box">
+
+        <div class="news-L">
+
+        </div>
+
+        <div class="news-R">
+            <ul>
+                <li>最新消息1</li>
+                <li>最新消息2</li>
+                <li>最新消息3</li>
+                <li>最新消息4</li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- 關於 -->
+    <section id="about">
+
+        <div class="title">
+            <h2>
+                <big>I</big>
+                NCINERATION INDUSTRY
+            </h2>
+        </div>
+
+        <div>
+
+        </div>
+    </section>
+
+
+
+    <!--  jQuery CDN  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick CDN   -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 輪播效果 -->
+    <script>
+        $("#banner").slick({
+            dots: true,
+            speed: 2000,
+            autoplay: true,
+            autoplayspeed: 3000,
+            fade: true,
+            arrows: false
+        });
+    </script>
 </body>
+
 </html>
