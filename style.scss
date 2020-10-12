@@ -7,3 +7,84 @@
 
 // 導覽列
 
+#navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: rgb(255, 255, 255);
+    padding: 15px 10px;
+    box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.2);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    grid-template: "logo animation search social";
+    height: 150px;
+    
+
+
+    .logo {
+        grid-area: logo;
+        text-align: left;
+        
+        
+        img {
+            width: 150px;
+        }
+    }
+
+    .Animation {
+        grid-area: "animation";
+        padding-top: 60px;
+        text-align: left;
+        letter-spacing: 30px;
+    }
+
+    .search {
+        grid-area: search;
+        // padding: 0 80px;
+        margin: 0 80px;
+    }
+
+    .social {
+        grid-area: social;
+        text-align: right;
+        padding-top: 45px;
+        letter-spacing: 30px;
+        
+        img {
+            width: 45px;
+        }
+    }
+}
+
+// 連結欄位
+#link {
+    padding-top: 150px;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        font-size: 30px;
+        // 清單符號  none 消失
+        list-style-type: none;
+        padding: 10px 0;
+        background: #affc7d;
+
+        li {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
+// 橫幅內文字動畫
+#bannerwords {
+    text-align: center;
+    font-size: 30px;
+}
+
+// 最新消息
+#news-box {
+    
+}

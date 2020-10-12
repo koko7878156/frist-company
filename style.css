@@ -6,4 +6,79 @@
           box-sizing: border-box;
   font-family: 微軟正黑體;
 }
+
+#navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: white;
+  padding: 15px 10px;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  grid-template: "logo animation search social";
+  height: 150px;
+}
+
+#navigation .logo {
+  grid-area: logo;
+  text-align: left;
+}
+
+#navigation .logo img {
+  width: 150px;
+}
+
+#navigation .Animation {
+  grid-area: "animation";
+  padding-top: 60px;
+  text-align: left;
+  letter-spacing: 30px;
+}
+
+#navigation .search {
+  grid-area: search;
+  margin: 0 80px;
+}
+
+#navigation .social {
+  grid-area: social;
+  text-align: right;
+  padding-top: 45px;
+  letter-spacing: 30px;
+}
+
+#navigation .social img {
+  width: 45px;
+}
+
+#link {
+  padding-top: 150px;
+}
+
+#link ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 30px;
+  list-style-type: none;
+  padding: 10px 0;
+  background: #affc7d;
+}
+
+#link ul li {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#bannerwords {
+  text-align: center;
+  font-size: 30px;
+}
 /*# sourceMappingURL=style.css.map */
