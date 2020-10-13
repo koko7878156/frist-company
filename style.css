@@ -97,11 +97,18 @@
   text-align: left;
 }
 
-#news .news-R {
+#news #news-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#news #news-box .news-R {
   margin: 20px 50px;
 }
 
-#news .news-R ul {
+#news #news-box .news-R ul {
   list-style-image: url(./img/Treeleaf-icon.png);
 }
 /*# sourceMappingURL=style.css.map */

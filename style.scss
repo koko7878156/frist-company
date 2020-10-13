@@ -19,14 +19,11 @@
     text-align: center;
     grid-template: "logo animation search social";
     height: 150px;
-    
-
 
     .logo {
         grid-area: logo;
         text-align: left;
-        
-        
+
         img {
             width: 150px;
         }
@@ -50,7 +47,7 @@
         text-align: right;
         padding-top: 45px;
         letter-spacing: 30px;
-        
+
         img {
             width: 45px;
         }
@@ -86,7 +83,6 @@
 
 // 最新消息
 #news {
-
     #tits {
         width: 100%;
         background: rgb(255, 255, 255);
@@ -95,21 +91,27 @@
         font-weight: bold;
         letter-spacing: 20px;
         text-align: left;
-        
+
         img {
             width: 130px;
             text-align: left;
         }
     }
 
-    .news-R {
-        
-       margin: 20px 50px ;
-       
-        
-        ul {
-            list-style-image: url(./img/Treeleaf-icon.png);
-            
+    #news-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .news-L {
+
+        }
+
+        .news-R {
+            margin: 20px 50px;
+
+            ul {
+                list-style-image: url(./img/Treeleaf-icon.png);
+            }
         }
     }
 }
