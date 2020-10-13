@@ -111,4 +111,8 @@
 #news #news-box .news-R ul {
   list-style-image: url(./img/Treeleaf-icon.png);
 }
+
+#news #news-box .news-R ul li {
+  line-height: 10px;
+}
 /*# sourceMappingURL=style.css.map */

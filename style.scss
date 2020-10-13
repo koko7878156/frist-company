@@ -102,15 +102,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        .news-L {
+        // .news-L {
 
-        }
+        // }
 
         .news-R {
             margin: 20px 50px;
 
             ul {
                 list-style-image: url(./img/Treeleaf-icon.png);
+                
+                li {
+                     line-height: 10px;
+                }
             }
         }
     }
